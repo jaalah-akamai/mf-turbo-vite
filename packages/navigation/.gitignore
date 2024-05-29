@@ -1,0 +1,26 @@
+# dependencies
+node_modules
+.pnp
+.pnp.js
+
+# testing
+coverage
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+*.log
+
+# local env files
+*.local
+dist
+dist-ssr
+.env
+.cache
+server/dist
+public/dist
+
+# turbo
+.turbo
