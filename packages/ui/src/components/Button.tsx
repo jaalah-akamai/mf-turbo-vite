@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 import './Button.css'
-import { useStore } from '@repo/store'
+import { useStore } from '@cloud-manager/store'
 
 export function Button(props: { disabled?: boolean }) {
   const {count, setCount} = useStore()

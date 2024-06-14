@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import { Button } from '@repo/ui/Button'
-import { Navigation } from '@repo/navigation/Navigation'
+import { Button } from '@cloud-manager/ui/Button'
+import { Volumes } from '@cloud-manager/volumes/Volumes'
 import './App.css'
 
 function App() {
@@ -40,7 +40,7 @@ function App() {
           Click on the Vite and React logos to learn more
         </p>
       </div>
-      <Navigation />
+      <Volumes />
     </div>
   )
 }

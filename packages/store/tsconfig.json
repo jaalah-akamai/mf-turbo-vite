@@ -1,5 +1,5 @@
 {
-  "extends": "@repo/config-typescript/vite.json",
+  "extends": "@cloud-manager/config-typescript/vite.json",
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"]
 }

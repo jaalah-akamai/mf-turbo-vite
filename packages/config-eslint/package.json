@@ -1,5 +1,5 @@
 {
-  "name": "@repo/config-eslint",
+  "name": "@cloud-manager/config-eslint",
   "version": "0.0.0",
   "main": "index.js",
   "license": "MIT",

@@ -1,5 +1,5 @@
 {
-  "name": "@repo/store",
+  "name": "@cloud-manager/store",
   "version": "0.0.1",
   "main": "./index.tsx",
   "types": "./index.tsx",
@@ -8,8 +8,8 @@
     "lint": "eslint *.ts*"
   },
   "devDependencies": {
-    "@repo/config-eslint": "workspace:*",
-    "@repo/config-typescript": "workspace:*"
+    "@cloud-manager/config-eslint": "workspace:*",
+    "@cloud-manager/config-typescript": "workspace:*"
   },
   "dependencies": {
     "zustand": "^4.5.2"

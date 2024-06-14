@@ -1,12 +1,12 @@
-import { useStore } from '@repo/store'
+import { useStore } from '@cloud-manager/store'
 import './App.css'
 
-export function Navigation() {
+export function Volumes() {
   const { count, setCount } = useStore()
 
   return (
     <div>
-      <h1>Navigation</h1>
+      <h1>Volumes</h1>
       <ul>
         <li>
           <a href="https://vitejs.dev" target="_blank">Vite</a>

@@ -21,7 +21,7 @@ importers:
         specifier: ^18.2.0
         version: 18.3.1(react@18.3.1)
     devDependencies:
-      '@repo/config-eslint':
+      '@cloud-manager/config-eslint':
         specifier: workspace:*
         version: link:packages/config-eslint
       '@types/react':
@@ -55,21 +55,40 @@ importers:
         specifier: ^5.2.2
         version: 5.4.5
 
-  apps/cloud-manager:
+  features/cloud-manager:
     dependencies:
-      '@repo/navigation':
-        specifier: workspace:*
-        version: link:../../packages/navigation
-      '@repo/ui':
+      '@cloud-manager/ui':
         specifier: workspace:*
         version: link:../../packages/ui
+      '@cloud-manager/volumes':
+        specifier: workspace:*
+        version: link:../volumes
     devDependencies:
-      '@repo/config-eslint':
+      '@cloud-manager/config-eslint':
         specifier: workspace:*
         version: link:../../packages/config-eslint
-      '@repo/config-typescript':
+      '@cloud-manager/config-typescript':
         specifier: workspace:*
         version: link:../../packages/config-typescript
+      vite:
+        specifier: ^5.2.0
+        version: 5.2.12
+
+  features/volumes:
+    dependencies:
+      '@cloud-manager/store':
+        specifier: workspace:*
+        version: link:../../packages/store
+    devDependencies:
+      '@cloud-manager/config-eslint':
+        specifier: workspace:*
+        version: link:../../packages/config-eslint
+      '@cloud-manager/config-typescript':
+        specifier: workspace:*
+        version: link:../../packages/config-typescript
+      '@vitejs/plugin-react':
+        specifier: ^4.2.1
+        version: 4.3.0(vite@5.2.12)
       vite:
         specifier: ^5.2.0
         version: 5.2.12
@@ -88,48 +107,29 @@ importers:
 
   packages/config-typescript: {}
 
-  packages/navigation:
-    dependencies:
-      '@repo/store':
-        specifier: workspace:*
-        version: link:../store
-    devDependencies:
-      '@repo/config-eslint':
-        specifier: workspace:*
-        version: link:../config-eslint
-      '@repo/config-typescript':
-        specifier: workspace:*
-        version: link:../config-typescript
-      '@vitejs/plugin-react':
-        specifier: ^4.2.1
-        version: 4.3.0(vite@5.2.12)
-      vite:
-        specifier: ^5.2.0
-        version: 5.2.12
-
   packages/store:
     dependencies:
       zustand:
         specifier: ^4.5.2
         version: 4.5.2(@types/react@18.3.3)(react@18.3.1)
     devDependencies:
-      '@repo/config-eslint':
+      '@cloud-manager/config-eslint':
         specifier: workspace:*
         version: link:../config-eslint
-      '@repo/config-typescript':
+      '@cloud-manager/config-typescript':
         specifier: workspace:*
         version: link:../config-typescript
 
   packages/ui:
     dependencies:
-      '@repo/store':
+      '@cloud-manager/store':
         specifier: workspace:*
         version: link:../store
     devDependencies:
-      '@repo/config-eslint':
+      '@cloud-manager/config-eslint':
         specifier: workspace:*
         version: link:../config-eslint
-      '@repo/config-typescript':
+      '@cloud-manager/config-typescript':
         specifier: workspace:*
         version: link:../config-typescript
 

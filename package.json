@@ -13,7 +13,7 @@
     "@emotion/styled": "^11.11.5"
   },
   "devDependencies": {
-    "@repo/config-eslint": "workspace:*",
+    "@cloud-manager/config-eslint": "workspace:*",
     "@types/react-dom": "^18.2.22",
     "@types/react": "^18.2.66",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
