@@ -5,7 +5,7 @@ type Store = {
   setCount: () => void;
 };
 
-export const useStore = create<Store>((set) => ({
+export const useStoreFromZustand = create<Store>((set) => ({
   count: 0,
   setCount: () => set((state) => ({ count: state.count + 1 })),
 }))

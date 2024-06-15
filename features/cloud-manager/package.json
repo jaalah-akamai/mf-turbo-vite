@@ -14,7 +14,9 @@
   },
   "dependencies": {
     "@cloud-manager/ui": "workspace:*",
-    "@cloud-manager/volumes": "workspace:*"
+    "@cloud-manager/volumes": "workspace:*",
+    "@cloud-manager/store-zustand": "workspace:*",
+    "@cloud-manager/store-jotai": "workspace:*"
   },
   "devDependencies": {
     "@cloud-manager/config-eslint": "workspace:*",

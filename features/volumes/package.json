@@ -4,8 +4,7 @@
   "version": "0.0.1",
   "type": "module",
   "exports": {
-    "./Volumes": "./src/App.tsx",
-    "./Store": "./node_modules/@cloud-manager/store"
+    "./Volumes": "./src/App.tsx"
   },
   "scripts": {
     "dev": "vite --clearScreen false --port 4001 --strictPort",
@@ -14,7 +13,8 @@
     "preview": "vite preview --port 4001 --strictPort"
   },
   "dependencies": {
-    "@cloud-manager/store": "workspace:*"
+    "@cloud-manager/store-zustand": "workspace:*",
+    "@cloud-manager/store-jotai": "workspace:*"
   },
   "devDependencies": {
     "@cloud-manager/config-eslint": "workspace:*",
@@ -22,6 +22,7 @@
     "@originjs/vite-plugin-federation": "^1.3.5",
     "@types/node": "^20.14.2",
     "@vitejs/plugin-react": "^4.2.1",
-    "vite": "^5.2.0"
+    "vite": "^5.2.0",
+    "jotai": "^1.4.4"
   }
 }

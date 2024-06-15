@@ -6,7 +6,8 @@
     "./Button": "./src/components/Button.tsx"
   },
   "dependencies": {
-    "@cloud-manager/store": "workspace:*"
+    "@cloud-manager/store-zustand": "workspace:*",
+    "@cloud-manager/store-jotai": "workspace:*"
   },
   "devDependencies": {
     "@cloud-manager/config-eslint": "workspace:*",

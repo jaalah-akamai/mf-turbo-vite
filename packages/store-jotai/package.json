@@ -1,5 +1,5 @@
 {
-  "name": "@cloud-manager/store",
+  "name": "@cloud-manager/store-jotai",
   "version": "0.0.1",
   "main": "./index.tsx",
   "types": "./index.tsx",
@@ -12,6 +12,6 @@
     "@cloud-manager/config-typescript": "workspace:*"
   },
   "dependencies": {
-    "zustand": "^4.5.2"
+    "jotai": "^1.4.4"
   }
 }

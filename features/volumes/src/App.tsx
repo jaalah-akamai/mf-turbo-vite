@@ -1,5 +1,6 @@
-import React from 'react';
-// import { useStore } from '@cloud-manager/store'
+// import React from 'react';
+// import { useStoreFromZustand } from '@cloud-manager/store-zustand'
+import { useCountFromJotai } from '@cloud-manager/store-jotai'
 import './App.css'
 
 export interface VolumesProps {
@@ -7,8 +8,9 @@ export interface VolumesProps {
 }
 
 export function Volumes({ title }: VolumesProps) {
-  // const { count, setCount } = useStore()
-  const [count, setCount] = React.useState(0)
+  // const { count, setCount } = useStoreFromZustand()
+  const [count, setCount] = useCountFromJotai();
+  // const [count, setCount] = React.useState(0)
 
   return (
     <div>

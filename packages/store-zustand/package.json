@@ -1,0 +1,17 @@
+{
+  "name": "@cloud-manager/store-zustand",
+  "version": "0.0.1",
+  "main": "./index.tsx",
+  "types": "./index.tsx",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint *.ts*"
+  },
+  "devDependencies": {
+    "@cloud-manager/config-eslint": "workspace:*",
+    "@cloud-manager/config-typescript": "workspace:*"
+  },
+  "dependencies": {
+    "zustand": "^4.5.2"
+  }
+}
