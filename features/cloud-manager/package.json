@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
+  "exports": {
+    ".": "./dist/index.tsx"
+  },
   "scripts": {
     "build": "tsc && vite build",
     "dev": "vite",
@@ -16,6 +19,8 @@
   "devDependencies": {
     "@cloud-manager/config-eslint": "workspace:*",
     "@cloud-manager/config-typescript": "workspace:*",
+    "@originjs/vite-plugin-federation": "^1.3.5",
+    "@vitejs/plugin-react": "^4.2.1",
     "vite": "^5.2.0"
   }
 }

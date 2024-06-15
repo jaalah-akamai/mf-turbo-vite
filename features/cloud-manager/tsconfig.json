@@ -1,4 +1,4 @@
 {
   "extends": "@cloud-manager/config-typescript/vite.json",
-  "include": ["src"]
+  "include": ["src"],
 }

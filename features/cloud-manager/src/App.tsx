@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { Button } from '@cloud-manager/ui/Button'
 import { Volumes } from '@cloud-manager/volumes/Volumes'
+import { Volumes as Volumes2 } from '@remote/volumes/Volumes'
 import './App.css'
 
 function App() {
@@ -40,7 +41,13 @@ function App() {
           Click on the Vite and React logos to learn more
         </p>
       </div>
-      <Volumes />
+      <div style={{
+        display: 'flex',
+        gap: '1rem',
+      }}>
+        <Volumes title={'Volumes: Build Time'}/>
+        <Volumes2 title={'Volumes: Runtime'}/>
+      </div>
     </div>
   )
 }
