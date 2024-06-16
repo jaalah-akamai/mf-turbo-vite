@@ -13,7 +13,7 @@ export function Button(props: { disabled?: boolean }) {
       disabled={props.disabled}
       // onClick={setCount}>
       onClick={() => setCount((c) => c + 1)}>
-      UI Button count is {count}
+      ui/Button: shared state: count is {count}
     </StyledButton>
   )
 }

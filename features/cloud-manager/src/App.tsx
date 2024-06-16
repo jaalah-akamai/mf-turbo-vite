@@ -11,7 +11,8 @@ function App() {
 
   return (
     <div style={{
-      display: 'flex'
+      display: 'flex',
+      gap: '2rem',
     }}>
       <div>
         <div>
@@ -22,31 +23,25 @@ function App() {
             <img src={reactLogo} className="logo react" alt="React logo" />
           </a>
         </div>
-        <h1>Cloud Manager</h1>
+        <h1>Cloud Manager (Host)</h1>
         <div className="card">
           <div style={{
             display: 'flex',
             gap: '1rem',
           }}>
           <button onClick={() => setCount((count) => count + 1)}>
-            App count is {count}
+            Local state: count is {count}
           </button>
           <Button />
           </div>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test HMR
-          </p>
         </div>
-        <p className="read-the-docs">
-          Click on the Vite and React logos to learn more
-        </p>
       </div>
       <div style={{
         display: 'flex',
-        gap: '1rem',
+        gap: '2rem',
       }}>
-        <Volumes title={'Volumes: Build Time'}/>
-        <Volumes2 title={'Volumes: Runtime'}/>
+        <Volumes buttonDesc='Shared state' title={'Build Time MFE (Remote)'}/>
+        <Volumes2 buttonDesc='Shared state code' title={'Runtime MFE (Remote)'} desc="The state code is shared, not the state itself." />
       </div>
     </div>
   )
